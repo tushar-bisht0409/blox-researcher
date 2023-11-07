@@ -1,0 +1,5 @@
+Error processing the url https://www.espncricinfo.com/rankings/content/page/211271.html: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+Error processing the url https://en.wikipedia.org/wiki/ICC_Men's_ODI_Team_Rankings: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+Error processing the url https://www.icc-cricket.com/rankings/mens/overview: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
