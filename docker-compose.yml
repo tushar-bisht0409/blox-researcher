@@ -1,7 +1,7 @@
 version: '3'
 services:
-  gpt-researcher:
-    image: assafelovic/gpt-researcher
+  blox-researcher:
+    image: assafelovic/blox-researcher
     build: ./
     environment: 
       OPENAI_API_KEY: ${OPENAI_API_KEY}

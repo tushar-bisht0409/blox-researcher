@@ -11,7 +11,7 @@ RUN apt-get install -y firefox-esr wget \
     && chmod +x geckodriver \
     && mv geckodriver /usr/local/bin/
 
-FROM install-browser as gpt-researcher-install
+FROM install-browser as blox-researcher-install
 
 ENV PIP_ROOT_USER_ACTION=ignore
 
@@ -21,14 +21,14 @@ WORKDIR /usr/src/app
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 
-FROM gpt-researcher-install AS gpt-researcher
+FROM blox-researcher-install AS blox-researcher
 
-RUN useradd -ms /bin/bash gpt-researcher \
-    && chown -R gpt-researcher:gpt-researcher /usr/src/app
+RUN useradd -ms /bin/bash blox-researcher \
+    && chown -R blox-researcher:blox-researcher /usr/src/app
 
-USER gpt-researcher
+USER blox-researcher
 
-COPY --chown=gpt-researcher:gpt-researcher ./ ./
+COPY --chown=blox-researcher:blox-researcher ./ ./
 
 EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
