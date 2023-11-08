@@ -42,23 +42,23 @@
 
 <section class="landing">
     <div class="max-w-5xl mx-auto text-center">
-        <h1 class="text-4xl font-extrabold mx-auto lg:text-7xl">
-            Hi Blox! <br>
+        <h1 className="font-extrabold mx-auto text-[70px]">
+            Goodbye to<br>
             <span
-                    style="background-image:linear-gradient(to right, #9867F0, #ED4E50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Goodbye to hours of research</span>
+                    style="background-image:linear-gradient(to right, #9867F0, #ED4E50); -webkit-background-clip: text; -webkit-text-fill-color: transparent text-; font-size: 70px;">hours of research</span>
         </h1>
-        <p class="max-w-5xl mx-auto text-gray-600 mt-8" style="font-size:20px">
+        <!-- <p class="max-w-5xl mx-auto text-gray-600 mt-8" style="font-size:20px">
             Say Hello to Blox Researcher, your AI mate for rapid insights and comprehensive research. Blox Researcher
             takes care of everything from accurate source gathering to organization of research results - all in one
             platform designed to make your research process a breeze.
-        </p>
+        </p> -->
         <a href="#form" class="btn btn-primary">Get Started</a>
     </div>
 </section>
 
 <main class="container" id="form">
-    <div class="agent-item"><img src="/static/defaultAgentAvatar.JPG" class="avatar"
-                                                alt="Auto Agent"></div>
+    <!-- <div class="agent-item"><img src="/static/defaultAgentAvatar.JPG" class="avatar"
+                                                alt="Auto Agent"></div> -->
     <form method="POST" class="mt-3" onsubmit="GPTResearcher.startResearch(); return false;">
         <div class="form-group">
             <label for="task" class="agent-question">What would you like me to research next?</label>
@@ -80,7 +80,7 @@
                 <option value="outline_report">Outline Report</option>
             </select>
         </div>
-        <input type="submit" value="Research" class="btn btn-primary button-padding">
+        <input type="submit" value="Research" class="btn btn-primary2 button-padding">
     </form>
 
     <div class="margin-div">
@@ -100,9 +100,9 @@
     </div>
 </main>
 
-<footer>
+<!-- <footer>
     <p>Blox Researcher &copy; 2023</p>
-</footer>
+</footer> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 <script src="/site/scripts.js"></script>

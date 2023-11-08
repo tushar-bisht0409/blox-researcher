@@ -9,7 +9,8 @@ body {
     color: #fff;
     line-height: 1.6;
     background-size: 200% 200%;
-    background-image: linear-gradient(45deg, #151A2D, #2D284D, #151A2D);
+    background-color: #333;
+    /* background-image: linear-gradient(45deg, #151A2D, #2D284D, #151A2D); */
     animation: gradientBG 10s ease infinite;
 }
 
@@ -22,13 +23,13 @@ body {
 }
 
 .landing h1 {
-    font-size: 3.5rem;
+    font-size: 70px;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
 .landing p {
-    font-size: 1.5rem;
+    font-size: 70px;
     font-weight: 400;
     max-width: 500px;
     margin: auto;
@@ -39,7 +40,7 @@ body {
     max-width: 900px;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #111;
     border-radius: 12px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
     transition: all .3s ease-in-out;
@@ -66,13 +67,27 @@ input:hover, input:focus, select:hover, select:focus {
 }
 
 .btn-primary {
-    background: linear-gradient(to right, #0062cc, #007bff);
+    background: linear-gradient(to right, #000000, #151515);
     border: none;
     transition: all .3s ease-in-out;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.btn-primary2 {
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: all .3s ease-in-out;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 20px;
 }
 
 .btn-secondary {
-    background: linear-gradient(to right, #6c757d, #6c757d);
+    background-color: white;
+    color: black;
     border: none;
     transition: all .3s ease-in-out;
 }
